@@ -430,10 +430,7 @@ if __name__ == '__main__':
     offset = 1
     last_epoch_time = progress._time()
     global_iteration = 0
-
-    import ipdb
-    ipdb.set_trace()
-
+    
     for epoch in progress:
         if args.inference or (args.render_validation and ((epoch - 1) % args.validation_frequency) == 0):
             stats = inference(args=args, epoch=epoch - 1, data_loader=inference_loader, model=model_and_loss,
