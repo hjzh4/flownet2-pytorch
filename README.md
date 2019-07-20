@@ -70,6 +70,8 @@ We've included caffe pre-trained models. Should you use these pre-trained weight
     --inference_dataset_root /path/to/mpi-sintel/clean/dataset \
     --resume /path/to/checkpoints 
     
+    # Example on Custom Dataset
+    python main.py --inference --model FlowNet2 --save_flow --save out --inference_dataset ImagesFromFolder --inference_dataset_root /home/hejia/Projects/Robot-Interaction-Learning/data/example_clip --resume models/FlowNet2_checkpoint.pth.tar    
 ## Training and validation
 
     # Example on MPISintel Final and Clean, with L1Loss on FlowNet2 model
